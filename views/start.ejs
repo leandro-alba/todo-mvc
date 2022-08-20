@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC lecture</title>
+    <link rel="stylesheet" href="css/lecture.css">
+</head>
+<body class="bg-glizzy">
+    <!-- <h1>Create A Todo List By Clicking The Button Below</h1>
+    <a href="/todos"> New Todo List</a> -->
+    <h1 class="h1-color-2">What is MVC?</h1>
+    <img src="https://i.ibb.co/pjnYdCm/IMG-1045.jpg" class="glizzy" alt="hot dog">
+    <h3>MVC =  Model, View, Controller</h3>
+    <p>MVC is a way to structure our server side code. MVC will seperate our code so that when we need to find something it will be easy to find. seperating our code makes our files less bloated.</p>
+    <h3>Add a comment about MVC below:</h3>
+    <ul>
+        <% starts.forEach( el => { %>
+            <li class='startItem' data-id='<%=el._id%>'><!--  data-id property, and we can plug anything we want into it. we can change the name to whatever we want ex data-pony. el is the element, el represnts a document. a parameter that will be holding our document or object each time it runs. our objects are coming from our collections.  <%=el._id%> _id will gives the id from our documents it self.--> 
+                <span ><%= el.start %></span>
+                <span class='del delete-emoji'> 💣 </span>
+            </li>
+        <% }) %>    
+        </ul>
+        <form action='/start/createStart' method='POST'>
+            <input type="text" placeholder="Type your comment here" name='startItem' class="text-field">
+            <input type="submit">
+        </form>
+
+    <section class="zenter">
+        <a href="/" class="emoji-size-up">🏠</a>
+        <a href="/pagetwo">What is the Model?</a>
+    </section>
+
+    <script src="js/start.js"></script>
+</body>
+</html>

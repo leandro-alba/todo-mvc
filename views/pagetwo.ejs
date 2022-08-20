@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC lecture</title>
+    <link rel="stylesheet" href="css/lecture.css">
+</head>
+<body class="bg-glizzy">
+    <!-- <h1>Create A Todo List By Clicking The Button Below</h1>
+    <a href="/todos"> New Todo List</a> -->
+    <h1 class="h1-color-2">What is the Model?</h1>
+    <img src="https://i.ibb.co/MhwYbmw/IMG-1047.jpg" class="pagetwo-img" alt="hot dog">
+    <h3>The Model interacts with our database</h3>
+    <p>The model adds to the database and pulls from the database. Then it will report back to the controller. Models are fancy objects and we can customize them using mongoose schema. Mongoose is a MongoDB object modeling tool and schema defines the shape of our documents.</p>
+    <h3>Add a comment about the Model below:</h3>
+    <ul>
+        <% pagetwos.forEach( el => { %>
+            <li class='pagetwoItem' data-id='<%=el._id%>'><!--  data-id property, and we can plug anything we want into it. we can change the name to whatever we want ex data-pony. el is the element, el represnts a document. a parameter that will be holding our document or object each time it runs. our objects are coming from our collections.  <%=el._id%> _id will gives the id from our documents it self.--> 
+                <span ><%= el.pagetwo %></span>
+                <span class='del delete-emoji'> 💣 </span>
+            </li>
+        <% }) %>    
+        </ul>
+        <form action='/pagetwo/createPagetwo' method='POST'>
+            <input type="text" placeholder="Type your comment here" name='pagetwoItem' class="text-field">
+            <input type="submit">
+        </form>
+
+    
+    <section class="zenter">
+        <a href="/" class="emoji-size-up">🏠</a>
+        <a href="/start" class="emoji-size-up">⬅️</a>
+        <a href="/pagethree" class="emoji-size-up">➡️</a>
+    </section>
+
+    <script src="js/pagetwo.js"></script>
+</body>
+</html>

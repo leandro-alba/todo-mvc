@@ -33,7 +33,7 @@ async function deleteTodo(){
 }
 
 async function markComplete(){
-    const todoId = this.parentNode.dataset.id
+    const todoId = this.parentNode.dataset.id//this. = span. move up a level to the parentNode = li then grab the id.
     try{
         const response = await fetch('todos/markComplete', {
             method: 'put',

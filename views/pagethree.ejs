@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVC lecture</title>
+    <link rel="stylesheet" href="css/lecture.css">
+</head>
+<body class="bg-glizzy">
+    <!-- <h1>Create A Todo List By Clicking The Button Below</h1>
+    <a href="/todos"> New Todo List</a> -->
+    <h1 class="h1-color-2">What is the View?</h1>
+    <img src="https://i.ibb.co/gMYjkQr/IMG-1048.jpg" class="pagetwo-img" alt="hot dog">
+    <h3>The View is all the CSS and HTML displayed to the user</h3>
+    <p>The view does whatever the controller tells it to do. Unlike the model which can interact with the controller, the view cannot.</p>
+    <h3>Add a comment about the View below:</h3>
+    <ul>
+        <% pagethrees.forEach( el => { %>
+            <li class='pagethreeItem' data-id='<%=el._id%>'><!--  data-id property, and we can plug anything we want into it. we can change the name to whatever we want ex data-pony. el is the element, el represnts a document. a parameter that will be holding our document or object each time it runs. our objects are coming from our collections.  <%=el._id%> _id will gives the id from our documents it self.--> 
+                <span ><%= el.pagethree %></span>
+                <span class='del delete-emoji'> 💣 </span>
+            </li>
+        <% }) %>    
+        </ul>
+        <form action='/pagethree/createPagethree' method='POST'>
+            <input type="text" placeholder="Type your comment here" name='pagethreeItem' class="text-field">
+            <input type="submit">
+        </form>
+    
+    <section class="zenter">
+        <a href="/" class="emoji-size-up">🏠</a>
+        <a href="/pagetwo" class="emoji-size-up">⬅️</a>
+        <a href="/pagefour" class="emoji-size-up">➡️</a>
+    </section>
+
+    <script src="js/pagethree.js"></script>
+</body>
+</html>

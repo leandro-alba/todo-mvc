@@ -3,9 +3,9 @@ const Todo = require('../models/Todo')
 module.exports = {
     getTodos: async (req,res)=>{
         try{
-            const todoItems = await Todo.find()
+            const todoItems = await Todo.find()//.toArray not needed with mongoose installed
             const itemsLeft = await Todo.countDocuments({completed: false})
-            res.render('todos.ejs', {todos: todoItems, left: itemsLeft})
+            res.render('todos.ejs', {todos: todoItems, left: itemsLeft})//itemsLeft get passed in left:, which links to todos.ejs
         }catch(err){
             console.log(err)
         }

@@ -11,7 +11,7 @@
     <h1>Todos</h1>
     <ul>
     <% todos.forEach( el => { %>
-        <li class='todoItem' data-id='<%=el._id%>'>
+        <li class='todoItem' data-id='<%=el._id%>'><!--  data-id property, and we can plug anything we want into it. we can change the name to whatever we want ex data-pony. el is the element, el represnts a document. a parameter that will be holding our document or object each time it runs. our objects are coming from our collections.  <%=el._id%> _id will gives the id from our documents it self.--> 
             <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
             <span class='del'> Delete </span>
         </li>
