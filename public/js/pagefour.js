@@ -21,3 +21,18 @@ async function deletePagefour(){
         console.log(err)
     }
 }
+// let button = document.querySelectorAll('.bbb')
+// button.addEventListener('click', ()=>{
+//     box.style.transform = 'translatex(1000px)';
+//     box.style.transition = 'transform 1s ease-in-out';
+
+//     requestAnimationFrame(()=>{
+//         requestAnimationFrame(()=>{
+//             box.style.transform = 'translateX(500px)'
+//         })
+//     })
+// })//from jake Archibald: in the loop video timestamp-> 22:10
+
+// document.body.addEventListener('DOMNodeInserted', ()=>{
+//     console.log('Stuff added to <body>!')
+// })

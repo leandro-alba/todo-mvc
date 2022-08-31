@@ -1,6 +1,5 @@
 // const { deletePagetwo } = require("../../controllers/pagetwo")
 // const { deleteTodo } = require("../../controllers/todos")
-
 const deleteBtn = document.querySelectorAll('.del')
 
 Array.from(deleteBtn).forEach((el)=>{
@@ -23,4 +22,9 @@ async function deletePagetwo(){
     }catch(err){
         console.log(err)
     }
+}
+
+function animate(){
+    const emojiSuprise = document.querySelectorAll('.oji')
+    
 }
