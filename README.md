@@ -1,7 +1,7 @@
 # MVC Lecture
 Model, View, Controller lecture in a CRUD app. Users learn about MVC by interating with the app. Users can add on my lecture by commenting. they can also delete their comments.
 
-**Link to project:** https://lecture-on-mvc.herokuapp.com/
+**Link to project:** https://nice-teal-clownfish-yoke.cyclic.app/
 
 ![MVC Lecture](https://i.ibb.co/gVmgRJG/mvc01.png)
 ![MVC Lecture](https://i.ibb.co/TMSg7B0/mvc02.png)
